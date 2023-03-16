@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 
 app.get('/:id', (req, res) => {
 
-    http.get(req.query.url, (resp) => {
+    http.get("https://" + req.query.url, (resp) => {
 
         let data = ''
 
